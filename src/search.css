@@ -1,0 +1,30 @@
+.search-container {
+    width: 600px;
+    margin-bottom: 25px;
+}
+
+#search {
+    width: 100%;
+    padding: 16px 22px;
+    border: 1px solid var(--glass-border);
+    border-radius: 30px;
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    color: var(--text);
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+#search::placeholder {
+    color: var(--text-secondary);
+}
+
+#search:focus {
+    border-color: var(--text);
+}
+
+#search:hover {
+    border-color: var(--text);
+    transform: scale(1.03);
+}

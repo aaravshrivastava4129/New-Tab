@@ -1,4 +1,5 @@
 const API_KEY = import.meta.env.VITE_NASA_API_KEY;
+const infoBox = document.querySelector(".info");
 
 
 fetch("https://science.nasa.gov/wp-json/wp/v2/apod-basic/")
@@ -8,4 +9,8 @@ fetch("https://science.nasa.gov/wp-json/wp/v2/apod-basic/")
 
     document.querySelector("#background").style.backgroundImage =
       `url("${apod.hdurl}")`;
+
+    infoBox.addEventListener('click', () => {
+      window.open(apod.permalink, '_blank', 'noopener,noreferrer');
+    });
   });

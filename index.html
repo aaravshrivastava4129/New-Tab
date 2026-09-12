@@ -4,12 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css">
-    <title>new-tab</title>
+    <link rel="stylesheet" href="src/time-date.css">
+    <link rel="stylesheet" href="src/search.css">
+    <link rel="stylesheet" href="src/shortcuts.css">
+    <link rel="stylesheet" href="src/calander.css">
+    <link rel="stylesheet" href="src/settings.css">
+    <title>New Tab</title>
   </head>
   <body>
     <div id="background"></div>
 
-    
+    <p class="settings-btn">&#9881;</p>
+
+    <div class="settings-panel">
+      <p style="margin: 0px 0px 10px 0px; font-size: 30px;">Settings</p>
+      <input type="text" id="name" placeholder="Enter Your Name" autocomplete="off" maxlength="20">
+      <button class="ok-btn" id="ok-btn">OK</button>
+    </div>
+
+    <div class="time-date">
+      <p class="time">02:56AM</p>
+      <p class="date">07/09/2026</p>
+    </div>
+
+    <p class="hello">Hello!!</p>
+
+
+    <div class="search-container">
+      <form id="search-form">
+        <input type="text" id="search" placeholder="Search the web..." autocomplete="off">
+      </form>
+    </div>
+
+    <div class="shortcuts">
+      <a href="https://github.com" class="shortcut">
+        <img src="https://github.com/favicon.ico" alt="GitHub">
+        <span>GitHub</span>
+      </a>
+
+      <a href="https://stardance.hackclub.com" class="shortcut">
+        <img src="https://stardance.hackclub.com/assets/favicon-cdc48065.png" alt="Stardance">
+        <span>Stardance</span>
+      </a>
+
+      <a href="https://slack.com" class="shortcut">
+        <img src="https://slack.com/favicon.ico" alt="Slack">
+        <span>Slack</span>
+      </a>
+
+      <a href="https://hackatime.hackclub.com/" class="shortcut">
+        <img src="https://hackatime.hackclub.com/assets/favicon-615aa3c5.png" alt="Hackatime">
+        <span>Hackatime</span>
+      </a>
+    </div>
+
+    <div class="calendar">
+      <div class="calendar-header">
+        <span id="calendar-month"></span>
+        <span id="calendar-year"></span>
+      </div>
+      <div class="calendar-weekdays">
+        <span>Sun</span>
+        <span>Mon</span>
+        <span>Tue</span>
+        <span>Wed</span>
+        <span>Thu</span>
+        <span>Fri</span>
+        <span>Sat</span>
+      </div>
+      <div id="calendar-days" class="calendar-days"></div>
+    </div>
+
+    <p class="info"> &#9432; Today's background image is from NASA.</p>
+
     <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/time-date.js"></script>
+    <script type="module" src="/src/search.js"></script>
+    <script type="module" src="/src/calander.js"></script>
+    <script type="module" src="/src/settings.js"></script>
   </body>
 </html>
