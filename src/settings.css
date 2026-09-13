@@ -46,7 +46,7 @@
     background: var(--glass);
     backdrop-filter: blur(12px);
     color: var(--text);
-    font-size: 1rem;
+    font-size: 15px;
     outline: none;
     transition: transform 0.3s ease, border 0.2s ease;
     margin: 0px;
